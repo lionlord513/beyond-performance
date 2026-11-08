@@ -1,0 +1,16 @@
+{
+  "label": "lag-abba",
+  "pid": 15780,
+  "duration_s": 50.00012760004029,
+  "samples": 1000,
+  "engine_frames_elapsed": 2353,
+  "engine_counter_fps": 47.05987990314857,
+  "foreground_sample_fraction": 1.0,
+  "max_sample_interval_ms": 53.18470002384856,
+  "max_read_duration_ms": 13.951200002338737,
+  "max_sample_lateness_ms": 3.6558000720106065,
+  "average_cpu_machine_pct": 26.53455489366456,
+  "sampled_median_game_thread_ms": 11.21835,
+  "sampled_median_render_thread_ms": 8.50625,
+  "sampled_median_gpu_frame_ms": 19.0105
+}

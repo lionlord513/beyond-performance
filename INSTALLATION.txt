@@ -1,0 +1,57 @@
+BEYOND PERFORMANCE 1.1.0 - INSTALLATION
+
+MANAGER INSTALL (RECOMMENDED)
+Close the game. In Beyond Mod Manager choose Add mod ZIP and import the
+standalone ZIP. Later updates use lionlord513/beyond-performance releases.
+Review adoption/replacement of a prior manual copy in the import preview.
+Use the manager for later updates/removal of a manager-owned install.
+
+ALTERNATIVE POWERSHELL INSTALL
+
+1. Close Drive Beyond Horizons. Extract the complete ZIP to a new folder.
+2. Open PowerShell in the extracted folder and run:
+   powershell -NoProfile -ExecutionPolicy Bypass -File .\Install.ps1
+   The default location is C:\Program Files (x86)\Steam\steamapps\common\Drive Beyond Horizons.
+   For a different Steam library, give its exact game folder:
+   powershell -NoProfile -ExecutionPolicy Bypass -File .\Install.ps1 -GamePath 'D:\SteamLibrary\steamapps\common\Drive Beyond Horizons'
+3. Launch the game, load gameplay, and press F10.
+
+Use the standalone ZIP on an unmodded installation. It supplies the tested
+UE4SS loader only where missing. The mod-only ZIP requires an existing
+compatible UE4SS installation. Neither package requires another gameplay mod.
+
+The installer never overwrites an existing loader, UE4SS settings, mods.txt,
+other mod, native game configuration or game save. It uses BeyondPerformance's
+enabled.txt. A mods.txt entry explicitly disabling BeyondPerformance is left
+untouched; enable that one entry yourself if you intend to use this mod.
+Custom UE4SS mod-folder configurations require the manual installation below.
+The installer does not elevate or change permissions. Use a game folder you
+can write to. It refuses to change the selected game while that game runs.
+
+UPGRADING
+Run the new installer with the game closed. It replaces only BeyondPerformance
+code, retains settings.ini and benchmark captures, and backs up the complete
+previous BeyondPerformance folder under:
+DriveBeyondHorizons\Binaries\Win64\BeyondPerformance-backups\install-<timestamp>\
+
+UNINSTALLING
+With the game closed, run:
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Uninstall.ps1 -GamePath 'YOUR GAME FOLDER'
+The active BeyondPerformance folder is moved to BeyondPerformance-backups\
+uninstall-<timestamp>\. Settings and benchmark files remain in that backup.
+No shared loader or other mod is removed. The game returns to normal behavior
+on its next launch. Copy settings.ini from the backup if reinstalling and you
+want to recover those preferences.
+
+MANUAL INSTALLATION (EXISTING UE4SS)
+Copy this package's BeyondPerformance folder into the loader's configured
+Mods folder. The standard destination is:
+DriveBeyondHorizons\Binaries\Win64\ue4ss\Mods\BeyondPerformance\
+Keep your existing BeyondPerformance/settings.ini and benchmark files when
+upgrading. Do not copy the Runtime folder over an existing runtime. enabled.txt
+starts the mod unless an explicit mod-list entry disables it. For a custom
+UE4SS layout, use that layout's actual mod directory and controlling mod list.
+
+The README and measurements report describe options, tested behavior and
+remaining limitations. SHA256SUMS.txt and package-manifest.json identify the
+exact packaged files. Source is supplied separately when requested.

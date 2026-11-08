@@ -1,0 +1,4 @@
+phase=1 condition=ahead epoch=1794100063 camera=422280.271,-25915.692,42082.395/0.080,-16.170 cap=59.590 scale=37.500
+phase=2 condition=ahead-rhi epoch=1794100075 camera=422280.271,-25915.692,42082.395/0.080,-16.170 cap=59.590 scale=37.500
+phase=3 condition=ahead-rhi epoch=1794100087 camera=422280.271,-25915.692,42082.395/0.080,-16.170 cap=59.590 scale=37.500
+phase=4 condition=ahead epoch=1794100099 camera=422280.271,-25915.692,42082.395/0.080,-16.170 cap=59.590 scale=37.500

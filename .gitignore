@@ -1,0 +1,11 @@
+/build/
+/work/
+__pycache__/
+*.pyc
+*.pdb
+*.obj
+*.lib
+*.exp
+mod/BeyondPerformance/settings.ini*
+mod/BeyondPerformance/benchmark-*
+mod/BeyondPerformance/state/

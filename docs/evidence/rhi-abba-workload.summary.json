@@ -1,0 +1,16 @@
+{
+  "label": "rhi-abba",
+  "pid": 15780,
+  "duration_s": 50.00040579994675,
+  "samples": 1000,
+  "engine_frames_elapsed": 2585,
+  "engine_counter_fps": 51.69958040626049,
+  "foreground_sample_fraction": 1.0,
+  "max_sample_interval_ms": 54.56580000463873,
+  "max_read_duration_ms": 22.236499993596226,
+  "max_sample_lateness_ms": 5.084200005512685,
+  "average_cpu_machine_pct": 28.35761490885306,
+  "sampled_median_game_thread_ms": 10.4874,
+  "sampled_median_render_thread_ms": 6.86935,
+  "sampled_median_gpu_frame_ms": 17.65675
+}

@@ -1,0 +1,28 @@
+{
+  "Id": "beyondperformance",
+  "Name": "Beyond Performance",
+  "Version": "1.1.0",
+  "Channel": "stable",
+  "Description": "Independent attachment lookup optimization, local performance controls, and frame-time recording. Open the utility menu with F10.",
+  "Changelog": "Second-pass foreground measurements; clearer render-ahead tradeoff; crash-resilient recorder; dynamic-resolution ownership fix; independent Beyond Mod Manager updates. Near-constant 60 FPS was not achieved. See MEASUREMENTS.md.",
+  "Dependencies": [
+    "UE4SS"
+  ],
+  "LoadAfter": [],
+  "Preserve": [
+    "DriveBeyondHorizons/Binaries/Win64/ue4ss/Mods/BeyondPerformance/settings.ini",
+    "DriveBeyondHorizons/Binaries/Win64/ue4ss/Mods/BeyondPerformance/settings.ini.bak",
+    "DriveBeyondHorizons/Binaries/Win64/ue4ss/Mods/BeyondPerformance/state",
+    "DriveBeyondHorizons/Binaries/Win64/ue4ss/Mods/BeyondPerformance/captures",
+    "DriveBeyondHorizons/Binaries/Win64/ue4ss/Mods/BeyondPerformance/benchmarks"
+  ],
+  "Update": {
+    "Provider": "github",
+    "Repository": "lionlord513/beyond-performance",
+    "TagPrefix": "v",
+    "AssetPattern": "BeyondPerformance-{version}-standalone.zip",
+    "ManifestAsset": "bmm-mod.json",
+    "Sha256Asset": "SHA256SUMS.txt",
+    "Kind": "mod"
+  }
+}

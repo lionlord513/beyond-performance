@@ -1,0 +1,125 @@
+{
+  "phase-1-ahead": {
+    "frames": 589,
+    "fps": 58.78544711535292,
+    "median_ms": 16.781598,
+    "p95_ms": 16.792402,
+    "p99_ms": 22.385698,
+    "max_ms": 47.293201,
+    "over50": 0,
+    "over100": 0,
+    "workload": {
+      "foreground": 1,
+      "rhi_thread_states": [
+        0
+      ],
+      "median_game_ms": 9.03805,
+      "median_render_ms": 6.9625,
+      "median_gpu_ms": 16.40135
+    }
+  },
+  "ahead": {
+    "frames": 1131,
+    "fps": 56.46997715207549,
+    "median_ms": 16.781598,
+    "p95_ms": 23.804899,
+    "p99_ms": 35.155199,
+    "max_ms": 72.342604,
+    "over50": 1,
+    "over100": 0
+  },
+  "phase-2-ahead-rhi": {
+    "frames": 456,
+    "fps": 45.54501860918422,
+    "median_ms": 16.7822505,
+    "p95_ms": 37.1124,
+    "p99_ms": 45.754701,
+    "max_ms": 65.233,
+    "over50": 3,
+    "over100": 0,
+    "workload": {
+      "foreground": 1,
+      "rhi_thread_states": [
+        1
+      ],
+      "median_game_ms": 17.66335,
+      "median_render_ms": 7.0352,
+      "median_gpu_ms": 21.6714
+    }
+  },
+  "ahead-rhi": {
+    "frames": 975,
+    "fps": 48.625636732059576,
+    "median_ms": 16.781699,
+    "p95_ms": 34.4638,
+    "p99_ms": 45.754701,
+    "max_ms": 65.233,
+    "over50": 6,
+    "over100": 0
+  },
+  "phase-3-ahead-rhi": {
+    "frames": 519,
+    "fps": 51.69796724426538,
+    "median_ms": 16.781602,
+    "p95_ms": 31.232502,
+    "p99_ms": 43.441303,
+    "max_ms": 54.5539,
+    "over50": 3,
+    "over100": 0,
+    "workload": {
+      "foreground": 1,
+      "rhi_thread_states": [
+        1
+      ],
+      "median_game_ms": 11.5155,
+      "median_render_ms": 4.6426,
+      "median_gpu_ms": 18.0295
+    }
+  },
+  "phase-4-ahead": {
+    "frames": 542,
+    "fps": 54.15204767946403,
+    "median_ms": 16.781602,
+    "p95_ms": 28.524801,
+    "p99_ms": 37.434299,
+    "max_ms": 72.342604,
+    "over50": 1,
+    "over100": 0,
+    "workload": {
+      "foreground": 1,
+      "rhi_thread_states": [
+        0
+      ],
+      "median_game_ms": 10.0537,
+      "median_render_ms": 7.20005,
+      "median_gpu_ms": 16.955849999999998
+    }
+  },
+  "pose_ranges": {
+    "speed_kmh": [
+      0.0,
+      0.0
+    ],
+    "x": [
+      422280.271,
+      422280.271
+    ],
+    "y": [
+      -25915.692,
+      -25915.692
+    ],
+    "z": [
+      42002.395,
+      42002.395
+    ],
+    "camera_yaw": [
+      0.08,
+      0.08
+    ],
+    "camera_pitch": [
+      -16.17,
+      -16.17
+    ]
+  },
+  "foreground_fraction": 1
+}

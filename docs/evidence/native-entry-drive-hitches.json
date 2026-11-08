@@ -1,0 +1,215 @@
+{
+  "sampled_workload": {
+    "gpu_3d_busiest_pct": {
+      "n": 3250,
+      "median": 23.274917,
+      "p95": 33.909051,
+      "max": 41.377816
+    },
+    "gpu_dedicated_mib": {
+      "n": 3250,
+      "median": 3715.800781,
+      "p95": 3740.429688,
+      "max": 3744.011719
+    },
+    "gpu_shared_mib": {
+      "n": 3250,
+      "median": 88.097656,
+      "p95": 101.679688,
+      "max": 106.878906
+    },
+    "system_available_mib": {
+      "n": 3250,
+      "median": 2460.0,
+      "p95": 2496.0,
+      "max": 2514.0
+    },
+    "system_page_reads_s": {
+      "n": 3250,
+      "median": 7.005405,
+      "p95": 25.756654,
+      "max": 30.374123
+    },
+    "system_pages_input_s": {
+      "n": 3250,
+      "median": 345.198553,
+      "p95": 1409.638639,
+      "max": 1735.230881
+    },
+    "io_read_mib_s": {
+      "n": 3250,
+      "median": 0.0,
+      "p95": 24.830408,
+      "max": 709.940875
+    },
+    "cpu_machine_pct": {
+      "n": 3250,
+      "median": 19.598227,
+      "p95": 59.686916,
+      "max": 136.510571
+    },
+    "game_thread_ms": {
+      "n": 3250,
+      "median": 23.1525,
+      "p95": 76.5681,
+      "max": 164.1624
+    },
+    "render_thread_ms": {
+      "n": 3250,
+      "median": 11.9955,
+      "p95": 35.9676,
+      "max": 210.3521
+    },
+    "gpu_frame_ms": {
+      "n": 3250,
+      "median": 35.5747,
+      "p95": 108.3822,
+      "max": 316.0289
+    },
+    "sample_lateness_ms": {
+      "n": 3250,
+      "median": 0.4102,
+      "p95": 0.7472,
+      "max": 2.7459
+    }
+  },
+  "five_second_bins": [
+    {
+      "start_s": 0,
+      "fps": 31.23992627118555,
+      "hitch100": 0,
+      "max_ms": 78.947902,
+      "speed_max": 43.854,
+      "read_mib_s": 5.5059384497991966,
+      "available_mib": 2458.0,
+      "pages_input_s": 1735.230881,
+      "gpu3d": 23.489767337349395
+    },
+    {
+      "start_s": 5,
+      "fps": 19.980545455522137,
+      "hitch100": 4,
+      "max_ms": 185.658902,
+      "speed_max": 60.705,
+      "read_mib_s": 10.076082884,
+      "available_mib": 2454.0,
+      "pages_input_s": 1409.638639,
+      "gpu3d": 23.733247715999997
+    },
+    {
+      "start_s": 10,
+      "fps": 18.345714612180267,
+      "hitch100": 1,
+      "max_ms": 109.177701,
+      "speed_max": 85.098,
+      "read_mib_s": 8.495634428,
+      "available_mib": 2486.0,
+      "pages_input_s": 771.569864,
+      "gpu3d": 26.009840492
+    },
+    {
+      "start_s": 15,
+      "fps": 17.051924913909943,
+      "hitch100": 4,
+      "max_ms": 210.497409,
+      "speed_max": 108.267,
+      "read_mib_s": 2.375436896,
+      "available_mib": 2471.0,
+      "pages_input_s": 943.194908,
+      "gpu3d": 24.191901716
+    },
+    {
+      "start_s": 20,
+      "fps": 30.66675416754548,
+      "hitch100": 1,
+      "max_ms": 115.8529,
+      "speed_max": 130.289,
+      "read_mib_s": 3.22009618,
+      "available_mib": 2462.0,
+      "pages_input_s": 703.048915,
+      "gpu3d": 24.234371096
+    },
+    {
+      "start_s": 25,
+      "fps": 27.903452430609157,
+      "hitch100": 3,
+      "max_ms": 112.367705,
+      "speed_max": 137.455,
+      "read_mib_s": 6.26655554,
+      "available_mib": 2445.0,
+      "pages_input_s": 1129.726759,
+      "gpu3d": 21.521549976
+    },
+    {
+      "start_s": 30,
+      "fps": 26.460900088931393,
+      "hitch100": 5,
+      "max_ms": 205.692202,
+      "speed_max": 137.302,
+      "read_mib_s": 1.810666284,
+      "available_mib": 2445.0,
+      "pages_input_s": 343.197579,
+      "gpu3d": 23.377058104
+    },
+    {
+      "start_s": 35,
+      "fps": 19.0418176710452,
+      "hitch100": 12,
+      "max_ms": 148.59581,
+      "speed_max": 133.957,
+      "read_mib_s": 1.558618624,
+      "available_mib": 2448.0,
+      "pages_input_s": 301.495268,
+      "gpu3d": 18.25784498
+    },
+    {
+      "start_s": 40,
+      "fps": 16.94627319070024,
+      "hitch100": 10,
+      "max_ms": 198.292896,
+      "speed_max": 133.347,
+      "read_mib_s": 1.07243614,
+      "available_mib": 2433.0,
+      "pages_input_s": 266.252988,
+      "gpu3d": 21.390639424
+    },
+    {
+      "start_s": 45,
+      "fps": 14.485191121831681,
+      "hitch100": 17,
+      "max_ms": 169.483602,
+      "speed_max": 134.163,
+      "read_mib_s": 1.292800072,
+      "available_mib": 2433.0,
+      "pages_input_s": 255.90621,
+      "gpu3d": 23.031369096000002
+    },
+    {
+      "start_s": 50,
+      "fps": 33.900092715409606,
+      "hitch100": 1,
+      "max_ms": 125.807196,
+      "speed_max": 123.78,
+      "read_mib_s": 3.076395492,
+      "available_mib": 2417.0,
+      "pages_input_s": 533.487522,
+      "gpu3d": 26.526575232
+    },
+    {
+      "start_s": 55,
+      "fps": 35.48780046410164,
+      "hitch100": 1,
+      "max_ms": 104.562499,
+      "speed_max": 134.101,
+      "read_mib_s": 2.3624534919999998,
+      "available_mib": 2407.0,
+      "pages_input_s": 800.336141,
+      "gpu3d": 28.065946296
+    }
+  ],
+  "limitations": [
+    "Workload starts about one second after the frame recorder; bins are approximate overlap, not per-hitch attribution.",
+    "System paging includes other applications; process faults include soft faults. GPU utilization sampled at one Hz.",
+    "Stack sampling overlaps part of this diagnostic driving run; not a clean comparison."
+  ]
+}

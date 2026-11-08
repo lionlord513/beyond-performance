@@ -1,0 +1,4 @@
+phase=1 condition=limited epoch=1794100144 camera=422280.271,-25915.692,42082.395/-8.880,-15.120 cap=59.590 scale=37.500
+phase=2 condition=ahead epoch=1794100156 camera=422280.271,-25915.692,42082.395/-7.900,-15.610 cap=59.590 scale=37.500
+phase=3 condition=ahead epoch=1794100168 camera=422280.271,-25915.692,42082.395/-7.900,-15.610 cap=59.590 scale=37.500
+phase=4 condition=limited epoch=1794100180 camera=422280.271,-25915.692,42082.395/-7.900,-15.610 cap=59.590 scale=37.500

@@ -1,0 +1,12 @@
+epoch=1794100289
+vehicle=KaijuG54_C /Game/Maps/L_MainLevel.L_MainLevel:PersistentLevel.KaijuG54_C_2146811144
+controllerPawn=KaijuG54_C /Game/Maps/L_MainLevel.L_MainLevel:PersistentLevel.KaijuG54_C_2146811144
+Observation only; native entry; buffer flush every two seconds; all hitches retained.
+attachments=true
+shadows=true
+gpu_budget=true
+frame_smoothing=true
+clouds=false
+low_latency=false
+raw_mouse=true
+frame_cap=false

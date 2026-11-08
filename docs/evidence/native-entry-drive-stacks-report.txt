@@ -1,0 +1,102 @@
+CLEAN-PROCESS CPU STACK SAMPLE (not an FPS benchmark)
+PID 15780; 12.002 seconds; 726 samples across 6 threads; 10Hz/thread.
+Maximum single suspension 2.196ms; total summed suspension 119.462ms. All threads resumed in finally before offline unwind.
+Context supplied by lead operator: Natural user entry and high-speed driving; Chrome closed, Discord retained. 100 percent game foreground. Diagnostic sampling window about 21-33 seconds; not a clean FPS comparison.
+Game PDB symbols are available. UE4SS/NVIDIA labels may be distant nearest exports; interpret those at module/RVA level.
+Wall-time stack counts include idle waits and are not CPU-cost percentages. CPU time is normalized to one logical core.
+
+Thread 9100 (unnamed): CPU 63.79% of one core; 121 wall-time samples.
+Leaf module counts: {'ntdll.dll': 49, 'DriveBeyondHorizons-Win64-Shipping.exe': 47, 'UE4SS.dll': 24, 'VCRUNTIME140.dll': 1}
+Game-loop stacks 98; render-loop stacks 0; UE4SS-inclusive stacks 88; wait/sleep leaf stacks 45.
+Max-tick-rate sleep stacks 0; render-thread wait stacks 0; Bink draw-path stacks 0.
+Most frequent exact game-module leaf symbols:
+  4: DriveBeyondHorizons-Win64-Shipping.exe!UObject::execLocalVariable
+  2: DriveBeyondHorizons-Win64-Shipping.exe!TProperty<FText,FProperty>::CopyValuesInternal
+  2: DriveBeyondHorizons-Win64-Shipping.exe!ProcessLocalScriptFunction
+  2: DriveBeyondHorizons-Win64-Shipping.exe!USLLandscapeFoliage::TickComponent
+  2: DriveBeyondHorizons-Win64-Shipping.exe!FGraphEvent::DispatchSubsequents
+  2: DriveBeyondHorizons-Win64-Shipping.exe!TSQVisitor<Chaos::TBox<double,3>,Chaos::FAccelerationStructureHandle,ChaosInterface::FOverlapHit,1>::Visit<2>
+  2: DriveBeyondHorizons-Win64-Shipping.exe!AActor::ForEachAttachedActors
+  1: DriveBeyondHorizons-Win64-Shipping.exe!UE::Math::TQuat<double>::Rotator
+  1: DriveBeyondHorizons-Win64-Shipping.exe!TGraphTask<FTickFunctionTask>::ExecuteTask
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FShapedGlyphSequence::IsDirty
+  1: DriveBeyondHorizons-Win64-Shipping.exe!UObject::CallFunction
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FStallingTaskQueue<FBaseGraphTask,64,2>::Pop
+
+Thread 15744 (unnamed): CPU 33.07% of one core; 121 wall-time samples.
+Leaf module counts: {'ntdll.dll': 87, 'DriveBeyondHorizons-Win64-Shipping.exe': 18, 'nvwgf2umx.dll': 10, 'd3d11.dll': 2, 'win32u.dll': 2, 'VCRUNTIME140.dll': 2}
+Game-loop stacks 0; render-loop stacks 121; UE4SS-inclusive stacks 0; wait/sleep leaf stacks 85.
+Max-tick-rate sleep stacks 0; render-thread wait stacks 86; Bink draw-path stacks 2.
+Most frequent exact game-module leaf symbols:
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FOcclusionQueryBatcher::BatchPrimitive
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FBinkMediaTextureResource::UpdateDeferredResource
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FRHICommandListImmediate::WaitForTasks
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FStaticMeshSceneProxy::GetLightRelevance
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FHierarchicalStaticMeshSceneProxy::GetDynamicMeshElements
+  1: DriveBeyondHorizons-Win64-Shipping.exe!ComputeDynamicMeshRelevance
+  1: DriveBeyondHorizons-Win64-Shipping.exe!TArray<FRDGSubresourceState,TSizedInlineAllocator<1,32,TRDGArrayAllocator<0> > >::SetNum
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FScene::UpdateAllPrimitiveSceneInfos
+  1: DriveBeyondHorizons-Win64-Shipping.exe!TMapBase<FRDGPooledBuffer * __ptr64,FRDGBuffer * __ptr64,TSetAllocator<TSparseArrayAllocator<TRDGArrayAllocator<0>,TSizedInlineAllocator<4,32,TRDGArrayAllocator<0> > >,TSizedInlineAllocator<1,32,TSizedInlineAllocator<4,32,TRDGArrayAllocator<0> > >,2,8,4>,TDefaultMapHashableKeyFuncs<FRDGPooledBuffer * __ptr64,FRDGBuffer * __ptr64,0> >::FindOrAddImpl<FRDGPooledBuffer * __ptr64 const & __ptr64>
+  1: DriveBeyondHorizons-Win64-Shipping.exe!DrawRectangle
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FInstancedStaticMeshSceneProxy::GetLightRelevance
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FRDGBuilder::AddTransition
+
+Thread 4024 (unnamed): CPU 15.23% of one core; 121 wall-time samples.
+Leaf module counts: {'ntdll.dll': 111, 'DriveBeyondHorizons-Win64-Shipping.exe': 9, 'VCRUNTIME140.dll': 1}
+Game-loop stacks 0; render-loop stacks 0; UE4SS-inclusive stacks 0; wait/sleep leaf stacks 111.
+Max-tick-rate sleep stacks 0; render-thread wait stacks 0; Bink draw-path stacks 0.
+Most frequent exact game-module leaf symbols:
+  5: DriveBeyondHorizons-Win64-Shipping.exe!Audio::FLadderFilter::ProcessAudio
+  2: DriveBeyondHorizons-Win64-Shipping.exe!Audio::FOnePoleFilter::ProcessAudioFrame
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Audio::FMixerSourceManager::ComputeSourceBuffersForIdRange
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Metasound::FWavePlayerOperator::Execute
+
+Thread 27316 (unnamed): CPU 11.59% of one core; 121 wall-time samples.
+Leaf module counts: {'ntdll.dll': 109, 'DriveBeyondHorizons-Win64-Shipping.exe': 11, 'VCRUNTIME140.dll': 1}
+Game-loop stacks 0; render-loop stacks 0; UE4SS-inclusive stacks 0; wait/sleep leaf stacks 107.
+Max-tick-rate sleep stacks 0; render-thread wait stacks 0; Bink draw-path stacks 0.
+Most frequent exact game-module leaf symbols:
+  3: DriveBeyondHorizons-Win64-Shipping.exe!LowLevelTasks::FScheduler::WorkerMain
+  1: DriveBeyondHorizons-Win64-Shipping.exe!<lambda_13433730119cfb784591f33af1853c89>::operator()
+  1: DriveBeyondHorizons-Win64-Shipping.exe!LowLevelTasks::TLocalQueueRegistry<1024>::StealItem
+  1: DriveBeyondHorizons-Win64-Shipping.exe!LowLevelTasks::FScheduler::TryExecuteTaskFrom<LowLevelTasks::TLocalQueueRegistry<1024>::TLocalQueue,&LowLevelTasks::TLocalQueueRegistry<1024>::TLocalQueue::DequeueLocal,0>
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FCollisionQueryFilterCallback::PreFilterImp
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::ConstructConvexTriangleOneShotManifold2<Chaos::TImplicitObjectInstanced<Chaos::FConvex> >
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::ImplicitOverlapOBBToAABB
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::TAABBTree<Chaos::FAccelerationStructureHandle,Chaos::TAABBTreeLeafArray<Chaos::FAccelerationStructureHandle,1,double>,1,double>::AddNodesOverlappingLeaves
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FWeakObjectPtr::Get
+
+Thread 18012 (unnamed): CPU 14.45% of one core; 121 wall-time samples.
+Leaf module counts: {'ntdll.dll': 108, 'DriveBeyondHorizons-Win64-Shipping.exe': 12, 'KERNEL32.DLL': 1}
+Game-loop stacks 0; render-loop stacks 0; UE4SS-inclusive stacks 0; wait/sleep leaf stacks 108.
+Max-tick-rate sleep stacks 0; render-thread wait stacks 0; Bink draw-path stacks 0.
+Most frequent exact game-module leaf symbols:
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FQueuedLowLevelThreadPool::ScheduleTasks
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Audio::FOnePoleFilter::ProcessAudioFrame
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::Private::FPBDConstraintGroupSolver::Reset
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Audio::FLadderFilter::ProcessAudio
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::FIslandGraph<Chaos::TGeometryParticleHandleImp<double,3,1> * __ptr64,Chaos::FConstraintHandleHolder,Chaos::Private::FPBDIsland * __ptr64,Chaos::Private::FPBDIslandManager>::SplitIslands
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::FGenericParticleHandleImp::GetTransformPQ
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::FContactPairModifierIterator::SeekValidContact
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::FPBDCollisionConstraint::SetOneShotManifoldContacts
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::FPBDRigidsSolver::BufferPhysicsResults
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Audio::FMultichannelLinearResampler::ProcessChannelAudioInternal
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::TAABBTree<Chaos::FAccelerationStructureHandle,Chaos::TAABBTreeLeafArray<Chaos::FAccelerationStructureHandle,1,double>,1,double>::QueryImp<2,Chaos::FQueryFastDataVoid,Chaos::Private::FSimOverlapVisitor>
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::CCDHelpers::DeltaExceedsThreshold
+
+Thread 9028 (unnamed): CPU 13.80% of one core; 121 wall-time samples.
+Leaf module counts: {'ntdll.dll': 114, 'DriveBeyondHorizons-Win64-Shipping.exe': 7}
+Game-loop stacks 0; render-loop stacks 0; UE4SS-inclusive stacks 0; wait/sleep leaf stacks 113.
+Max-tick-rate sleep stacks 0; render-thread wait stacks 0; Bink draw-path stacks 0.
+Most frequent exact game-module leaf symbols:
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FNiagaraSystemSimulation::TransferSystemSimResults
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FVertexFactory::GetStreams
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::FSingleShapePairCollisionDetector::GenerateCollisionCCDImpl
+  1: DriveBeyondHorizons-Win64-Shipping.exe!Chaos::FConvex::GetMostOpposingPlaneScaled
+  1: DriveBeyondHorizons-Win64-Shipping.exe!FDepthPassMeshProcessor::Process<0>
+  1: DriveBeyondHorizons-Win64-Shipping.exe!THazardPointer<FAAArrayQueue<LowLevelTasks::FTask>::Node,1>::Get
+  1: DriveBeyondHorizons-Win64-Shipping.exe!LowLevelTasks::FScheduler::WorkerMain
+
+Capture errors: 0.
+Interpretation boundary: this capture can locate active threads and recurring call paths. It cannot establish a performance gain, precisely allocate CPU time from wall-time counts, or prove that a module is unnecessary. All feature comparisons must use separate, unsuspended capture windows.
+No game memory writes, code injection, debugger attachment, privilege changes, UI input, or mod changes were performed by the sampler.

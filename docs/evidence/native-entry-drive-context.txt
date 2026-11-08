@@ -1,0 +1,12 @@
+epoch=1794099307
+vehicle=RotorGT7_C /Game/Maps/L_MainLevel.L_MainLevel:PersistentLevel.RotorGT7_C_2147386908
+controllerPawn=RotorGT7_C /Game/Maps/L_MainLevel.L_MainLevel:PersistentLevel.RotorGT7_C_2147386908
+Observation only; native entry; buffer flush every two seconds; all hitches retained.
+attachments=true
+shadows=true
+gpu_budget=true
+frame_smoothing=true
+clouds=false
+low_latency=true
+raw_mouse=true
+frame_cap=false
