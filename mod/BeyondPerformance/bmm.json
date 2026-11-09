@@ -1,10 +1,10 @@
 {
   "Id": "beyondperformance",
   "Name": "Beyond Performance",
-  "Version": "1.1.0",
+  "Version": "1.1.1",
   "Channel": "stable",
-  "Description": "Independent attachment lookup optimization, local performance controls, and frame-time recording. Open the utility menu with F10.",
-  "Changelog": "Second-pass foreground measurements; clearer render-ahead tradeoff; crash-resilient recorder; dynamic-resolution ownership fix; independent Beyond Mod Manager updates. Near-constant 60 FPS was not achieved. See MEASUREMENTS.md.",
+  "Description": "Performance settings and frame-rate recording. Press F10 to open the menu.",
+  "Changelog": "Shortened option descriptions and installation help. Performance settings are unchanged.",
   "Dependencies": [
     "UE4SS"
   ],

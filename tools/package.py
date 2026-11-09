@@ -93,7 +93,7 @@ def archive(stage,destination):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--version',default='1.1.0')
+    ap.add_argument('--version',default='1.1.1')
     ap.add_argument('--output',type=Path,default=ROOT/'build')
     ap.add_argument('--runtime-source',type=Path,default=Path(os.environ.get('ProgramFiles(x86)',r'C:\Program Files (x86)'))/'Steam/steamapps/common/Drive Beyond Horizons/DriveBeyondHorizons/Binaries/Win64')
     ap.add_argument('--mod-source',type=Path,default=ROOT/'mod/BeyondPerformance')

@@ -1,14 +1,16 @@
 # Changelog
 
-## 1.1.0
+## 1.1.1
+- Shortened menu descriptions and installation help.
+- Performance settings are unchanged.
 
-- Added an independent Beyond Mod Manager release feed, package metadata and checksums; no dependency or load-order requirement involving another gameplay mod.
-- Made the frame recorder checkpoint its CSV every two seconds. Interrupted captures retain their completed frames and remain explicitly marked partial. Added frames over 100 ms and ending settings to the report.
-- Clarified that reducing render-ahead can worsen throughput and stutter. It remains optional and off by default.
-- Fixed pixel-budget ownership when dynamic resolution activates after the option: restore only the still-owned scale and yield, matching existing DLSS protection.
-- Added foreground driving investigation, including native car entry and a measured 137 km/h run. See MEASUREMENTS.md for results and limitations.
+## 1.1.0
+- Added Beyond Mod Manager updates.
+- Recordings now save progress every two seconds, keeping completed frames after a crash. Reports include frames over 100 ms and the settings at the end of the recording.
+- Clarified that reduced render-ahead can lower FPS or cause stutter. It remains off by default.
+- Fixed render resolution not being restored correctly when dynamic resolution takes over.
+- Added driving measurements. See MEASUREMENTS.md for results and limitations.
 
 ## 1.0.0
-
-- Added guarded removal of duplicate within-call attachment lookups, local mouse/render controls, persistent settings, F10 utility menu, frame recorder and standalone installer.
-- Initial tests demonstrated an offscreen unlimited-cap smoothing effect, but did not establish improvement at the normal cap. Historical measurements are retained in docs/MEASUREMENTS-1.0.0.md.
+- Added vehicle attachment optimization, mouse and graphics options, saved settings, the F10 menu, frame recording and a standalone installer.
+- Initial tests did not establish an improvement at the normal FPS cap. Original measurements remain in docs/MEASUREMENTS-1.0.0.md.

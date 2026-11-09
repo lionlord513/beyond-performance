@@ -1,6 +1,6 @@
 local root=debug.getinfo(1,'S').source:sub(2):gsub('\\','/'):match('^(.*)/Scripts/[^/]+$')
 assert(root,'Install as Mods/BeyondPerformance/Scripts/main.lua')
-local M={root=root,version='1.1.0',active=true,ready=false}
+local M={root=root,version='1.1.1',active=true,ready=false}
 function M.valid(o)return o and o:IsValid()end
 function M.log(s)print('[Beyond Performance] '..tostring(s)..'\n')end
 local game=StaticFindObject('/Script/Engine.Default__GameplayStatics');local engine
@@ -12,14 +12,14 @@ function M.getPC()
 end
 M.defaults={attachments=true,raw_mouse=true,low_latency=false,frame_smoothing=false,gpu_budget=false,shadows=false,clouds=false,frame_cap=false}
 M.options={
- {key='attachments',label='Remove duplicate attachment lookups',description='Reuses the vehicle lookup already completed in the same call. Keeps attachment ticks, physics, controls and network updates unchanged. Only runs on verified game bytecode.'},
- {key='raw_mouse',label='Disable mouse smoothing',description='Removes the engine mouse smoothing filter and clears its history. Keeps sensitivity and game actions unchanged. Turn off to restore your previous smoothing setting.'},
- {key='low_latency',label='Reduce render-ahead (can lower FPS)',description='Stops the game thread running one frame ahead of rendering. Leave OFF when troubleshooting slow frames: reducing overlap can worsen FPS and stutter. Mouse smoothing is a separate option; no physical latency gain is guaranteed.'},
- {key='frame_smoothing',label='Disable engine frame-rate smoothing',description='Removes the engine adaptive FPS ceiling. May increase power use or uneven frame pacing; an FPS gain is not guaranteed. Keeps your explicit frame cap and VSync unchanged.'},
- {key='gpu_budget',label='Reduce rendered pixels',description='Uses 75% of the current render scale in each dimension. Reduces GPU work with a softer image. Defers if DLSS or dynamic resolution takes control. Off restores the prior scale where still owned.'},
- {key='shadows',label='Disable dynamic shadows',description='Reduces shadow rendering work. Shadows will disappear. When Apocalypse is installed, use its extreme mode for this setting.'},
- {key='clouds',label='Disable volumetric cloud and fog rendering',description='Reduces volumetric GPU work without changing time or weather. When Apocalypse is installed, use its extreme mode for this setting.'},
- {key='frame_cap',label='Limit frame rate to 60 FPS',description='Caps higher frame rates at 60; retains a lower existing cap. Can reduce load and improve pacing when the PC can sustain 60 FPS. Does not make a slow scene run faster.'},
+ {key='attachments',label='Optimize vehicle attachments',description='Reduces repeated work for vehicle attachments. Unavailable on unsupported game versions.'},
+ {key='raw_mouse',label='Disable mouse smoothing',description='Turns off mouse smoothing. Turn off this option to restore your previous setting.'},
+ {key='low_latency',label='Reduce render-ahead (can lower FPS)',description='May reduce input delay, but can lower FPS or cause stutter. Leave off when troubleshooting low FPS.'},
+ {key='frame_smoothing',label='Disable engine frame-rate smoothing',description='Removes automatic frame-rate smoothing. May increase power use or stutter. Your FPS cap and VSync still apply.'},
+ {key='gpu_budget',label='Reduce rendered pixels',description='Lowers render resolution for a softer image and less GPU load. Unavailable while DLSS or dynamic resolution is active.'},
+ {key='shadows',label='Disable dynamic shadows',description='Removes dynamic shadows. With Beyond Apocalypse installed, use its Extreme Performance Mode instead.'},
+ {key='clouds',label='Disable volumetric cloud and fog rendering',description='Removes volumetric clouds and fog. With Beyond Apocalypse installed, use its Extreme Performance Mode instead.'},
+ {key='frame_cap',label='Limit frame rate to 60 FPS',description='Caps FPS at 60, or keeps your lower cap. Does not raise FPS in slow scenes.'},
 }
 local storage=dofile(root..'/Scripts/settings.lua')
 M.settings=storage.load(root..'/settings.ini',M.defaults)

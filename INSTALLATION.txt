@@ -1,8 +1,8 @@
-BEYOND PERFORMANCE 1.1.0 - INSTALLATION
+BEYOND PERFORMANCE 1.1.1 - INSTALLATION
 
 MANAGER INSTALL (RECOMMENDED)
 Close the game. In Beyond Mod Manager choose Add mod ZIP and import the
-standalone ZIP. Later updates use lionlord513/beyond-performance releases.
+standalone ZIP. BMM checks for later updates.
 Review adoption/replacement of a prior manual copy in the import preview.
 Use the manager for later updates/removal of a manager-owned install.
 
@@ -51,7 +51,3 @@ Keep your existing BeyondPerformance/settings.ini and benchmark files when
 upgrading. Do not copy the Runtime folder over an existing runtime. enabled.txt
 starts the mod unless an explicit mod-list entry disables it. For a custom
 UE4SS layout, use that layout's actual mod directory and controlling mod list.
-
-The README and measurements report describe options, tested behavior and
-remaining limitations. SHA256SUMS.txt and package-manifest.json identify the
-exact packaged files. Source is supplied separately when requested.

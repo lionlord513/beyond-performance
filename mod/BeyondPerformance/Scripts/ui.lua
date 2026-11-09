@@ -65,8 +65,8 @@ return function(M)
     local function rows()
         local result = {}
         for _, option in ipairs(M.options) do result[#result + 1] = option end
-        result[#result + 1] = {action = 'benchmark', label = 'Record a performance sample', description = 'Close the menu and record the same view or route before and after changing options.'}
-        result[#result + 1] = {action = 'defaults', label = 'Restore Beyond Performance defaults', description = 'Restore only this mod\'s preferences. Your game settings and saves stay separate.'}
+        result[#result + 1] = {action = 'benchmark', label = 'Record a performance sample', description = 'Record the same view or route before and after changing a setting.'}
+        result[#result + 1] = {action = 'defaults', label = 'Restore Beyond Performance defaults', description = 'Restores this mod\'s default settings.'}
         return result
     end
 
