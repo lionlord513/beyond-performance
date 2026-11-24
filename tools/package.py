@@ -93,7 +93,7 @@ def archive(stage,destination):
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--version',default='1.1.1')
+    ap.add_argument('--version',default='1.1.2')
     ap.add_argument('--output',type=Path,default=ROOT/'build')
     ap.add_argument('--runtime-source',type=Path,default=Path(os.environ.get('ProgramFiles(x86)',r'C:\Program Files (x86)'))/'Steam/steamapps/common/Drive Beyond Horizons/DriveBeyondHorizons/Binaries/Win64')
     ap.add_argument('--mod-source',type=Path,default=ROOT/'mod/BeyondPerformance')
@@ -109,10 +109,8 @@ def main():
     stage.mkdir()
     modfiles=package_mod(a.mod_source.resolve(),stage,a.version)
     for name_script in ('Install.ps1','Uninstall.ps1','Common.ps1'):copy_file(ROOT/'tools'/name_script,stage/name_script)
-    for doc in ('README.md','README.txt','MEASUREMENTS.md','MEASUREMENTS.txt','CHANGELOG.md','INSTALLATION.txt','LICENSE.txt'):
+    for doc in ('README.md','README.txt','CHANGELOG.md','INSTALLATION.txt','LICENSE.txt'):
         if (ROOT/doc).is_file():copy_file(ROOT/doc,stage/doc)
-    if (ROOT/'docs').is_dir():
-        for p in source_files(ROOT/'docs'):copy_file(p,stage/'docs'/p.relative_to(ROOT/'docs'))
     runtime=[]
     if not a.mod_only:
         for rel in RUNTIME_FILES:

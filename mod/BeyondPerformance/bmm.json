@@ -1,10 +1,10 @@
 {
   "Id": "beyondperformance",
   "Name": "Beyond Performance",
-  "Version": "1.1.1",
+  "Version": "1.1.2",
   "Channel": "stable",
   "Description": "Performance settings and frame-rate recording. Press F10 to open the menu.",
-  "Changelog": "Shortened option descriptions and installation help. Performance settings are unchanged.",
+  "Changelog": "Cleaned up the download: removed development reports and testing notes. Gameplay is unchanged.",
   "Dependencies": [
     "UE4SS"
   ],

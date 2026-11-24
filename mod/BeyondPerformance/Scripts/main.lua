@@ -1,6 +1,6 @@
 local root=debug.getinfo(1,'S').source:sub(2):gsub('\\','/'):match('^(.*)/Scripts/[^/]+$')
 assert(root,'Install as Mods/BeyondPerformance/Scripts/main.lua')
-local M={root=root,version='1.1.1',active=true,ready=false}
+local M={root=root,version='1.1.2',active=true,ready=false}
 function M.valid(o)return o and o:IsValid()end
 function M.log(s)print('[Beyond Performance] '..tostring(s)..'\n')end
 local game=StaticFindObject('/Script/Engine.Default__GameplayStatics');local engine

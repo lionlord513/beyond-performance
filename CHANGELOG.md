@@ -1,3 +1,7 @@
+# 1.1.2
+
+- Cleaned up the download by removing development reports and testing notes. Gameplay is unchanged.
+
 # Changelog
 
 ## 1.1.1

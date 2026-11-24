@@ -1,8 +1,8 @@
-# Beyond Performance 1.1.1
+# Beyond Performance 1.1.2
 
 Adjust performance settings and record frame-rate samples in Drive Beyond Horizons. Press **F10** to open the menu.
 
-Performance gains vary. This mod does not guarantee 60 FPS, and driving stutter remains. See MEASUREMENTS.md for the recorded results.
+Performance gains vary. This mod does not guarantee 60 FPS, and driving stutter remains.
 
 ## Install
 
@@ -40,7 +40,3 @@ Use the same view or route and graphics settings. Change one option at a time an
 ## Remove
 
 Close the game and uninstall through BMM if it manages the mod. For a script installation, run Uninstall.ps1 as described in INSTALLATION.txt. It moves the mod, settings and captures into BeyondPerformance-backups. Shared UE4SS files remain installed.
-
-## Source
-
-Tested against Steam build 26437602 with UE4SS 3.0.1 Beta. Build the native helper with build-native.ps1, run tests/run.py, and package with tools/package.py. Development details and measurements remain in the source and MEASUREMENTS.md.
